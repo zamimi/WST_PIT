@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Zamantha | Introduction</title>
+		<link rel="stylesheet" type="text/css" href="design.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+    	<div class="content">
+    		<!--The Basic Information w/ picture and Biography-->
+		    <div class="flex-container">
+	          <div class="box">
+          		<picture>
+          			<source srcset="images/photo.jpg" media="(min-width: 769px) and (max-width: 3000px)">
+          			<source srcset="images/anophto.png" media="(max-width: 768px)">
+              		<img src="images/photo.jpg" class="itsme">
+          		</picture>
+	          </div>
+	          <div class="box">
+	            	<h2>Basic Information:</h2>
+	              <span>
+	                <b>Name:</b> Zamantha Shane A. Pacanut<br>
+	                <b>Age:</b> 18<br>
+	                <b>Birthday:</b> November 6, 2005<br>
+	                <b>Biography:</b><br> 
+	                A student of University of Science and Technology from the Southern Philippines. A first year student of the course Bachelors of Science in Information Technology. Joining the course for the sole purpose of creating a game, wanting to enjoy the process of programming as well. Looking forward to the learning she will face in this prestigious school, she hopes to be proud of herself for what she is and what she will become.<br></span>
+	                <h4>If you want to know more about Zamantha, bellow is her likes, dislikes and thoughts of her programming teacher. There are also links to her <a href="about.html">interests</a>	              
+	          </div>
+	        </div>
+	        <!--End of The Basic Information w/ picture and Biography-->
+	        <!--Slidshow w/ Java Script-->
+		    <div class="slideshow-container" style="align-items: center">
+				<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 3</div>
+							<center><img src="images/img1.png" alt="like" style="width:100%"></center>
+						<div class="text">What I like.</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 3</div>
+							<center><img src="images/img2.png" alt="hate" style="width:100%"></center>
+						<div class="text">What I dislike.</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 3</div>
+							<center><img src="images/img3.png" alt="subject" style="width:100%"></center>
+						<div class="text">My thoughts on the subject.</div>
+					</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<!-- The dots/circles -->
+			<div style="position: relative; top: 86%; left: 48%; margin-bottom: 15px">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			<!--End of Slideshow HTML-->
+			<script type="text/javascript">
+				let slideIndex = 1;
+				  showSlides(slideIndex);
+
+				// Next/previous controls
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				    dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				}
+			</script>
+			<!--End of Slideshow JavaScript. Interests and Hobbies Tables-->
+		</div>
+		<div class="header" id="headerwmotto">
+	  		<p>"It is what it is"</p>
+		</div>
+		<div class="footer">
+  				<p>Bachelor in Science of Information Technology | 1st Year | USTP</p>
+  				<a href="https://www.facebook.com/ZamanthaShane.Pacanut" class="fb" target="_blank"><img src="images/facebook.png" width="30"></a>
+  				<a href="https://www.instagram.com/kinchohakai1165/" target="_blank"><img src="images/insta.png" width="30"></a>
+  				<a href="https://discord.gg/zvn7avdYuj" target="_blank"><img src="images/discord.png" width="30"></a>
+  				<a href="https://www.youtube.com/channel/UCqi62T_PrYGJgsDTDXLQ0DQ" target="_blank"><img src="images/yt.png" width="30"></a>
+		</div>
+	</body>
+</html>
