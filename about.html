@@ -10,37 +10,52 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div id="inter" class="tabcontent">
-			<p>If you want to go back? Press this! <a href="index.html">Home.</a></p>
-			<img src="images/interests.png" class="int">
-			<h1>Interests</h1>
-			<p>More like, things Zamantha have been interested in watching. This is where you'll see about the shows she has watched during her school break!</p>
+		<div class="header" id="headerwmotto">
+	  		<p>Zamantha's Motto: "It is what it is"</p>
+			<div class="buttons">
+				<button><a href="index.html">Home</a></button>
+				<button><a href="about.html">Interests</a></button>
+			</div>
+			<div class="socmedlinks">	
+				<a href="https://www.facebook.com/ZamanthaShane.Pacanut" class="fb" target="_blank"><img src="images/facebook.png" width="30"></a>
+				<a href="https://www.instagram.com/kinchohakai1165/" target="_blank"><img src="images/insta.png" width="30"></a>
+				<a href="https://discord.gg/zvn7avdYuj" target="_blank"><img src="images/discord.png" width="30"></a>
+				<a href="https://www.youtube.com/channel/UCqi62T_PrYGJgsDTDXLQ0DQ" target="_blank"><img src="images/yt.png" width="30"></a>
+			</div>
 		</div>
+		<div class="slideshow">
+			<div id="inter" class="tabcontent">
+				<p>If you want to go back? Press this! <a href="index.html">Home.</a></p>
+				<img src="images/interests.png" class="int">
+				<h1>Interests</h1>
+				<p>More like, things Zamantha have been interested in watching. This is where you'll see about the shows she has watched during her school break!</p>
+			</div>
 
-		<div id="Cheat" class="tabcontent">
-			<img src="images/show1.png" class="int">
-			<h1>I Got A Cheat Skill</h1>
-			<p> The title is rather long; "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too." But to summarize the show, it is about a boy who's been brutally bullied all his life discovers a door to another world, which grants him access to cheat skills and opportunities to live a better life.</p>
+			<div id="Cheat" class="tabcontent">
+				<img src="images/show1.png" class="int">
+				<h1>I Got A Cheat Skill</h1>
+				<p> The title is rather long; "I Got a Cheat Skill in Another World and Became Unrivaled in the Real World, Too." But to summarize the show, it is about a boy who's been brutally bullied all his life discovers a door to another world, which grants him access to cheat skills and opportunities to live a better life.</p>
+			</div>
+
+			<div id="Elf" class="tabcontent">
+				<img src="images/show2.png" class="int">
+				<h1>Frieren</h1>
+				<p>Frieren: Beyond Journey's End (or simply Frieren!) follows the journey of Frieren, an elf mage who had once embarked on perilous adventures with her comrades to vanquish evil. The story takes place decades after their victory when Frieren is forced to confront her own immortality at the funeral of one of her friends.</p>
+			</div>
+
+			<div id="Shield" class="tabcontent">
+				<img src="images/show3.png" class="int">
+				<h1>Rising of The Shield Hero</h1>
+				<p>In this show, a gamer is magically summoned into a parallel universe, where he and four more others were chosen as the four cardinal heroes destined to save the world from its prophesied doom. Stories of old tell of four otherworldly heroes - wielding the sword, spear, bow, and shield - who defended the land from the waves of calamity.</p>
+			</div>
+
+
+			<button class="tablink" onclick="openCity('inter', this, ' #78966E')" id="defaultOpen">Interests</button>
+			<button class="tablink" onclick="openCity('Cheat', this, '#8C3838')">Show #1</button>
+			<button class="tablink" onclick="openCity('Elf', this, '#537D8D')">Show #2</button>
+			<button class="tablink" onclick="openCity('Shield', this, '#A0B2A6')">Show #3</button>
+			
 		</div>
-
-		<div id="Elf" class="tabcontent">
-			<img src="images/show2.png" class="int">
-			<h1>Frieren</h1>
-			<p>Frieren: Beyond Journey's End (or simply Frieren!) follows the journey of Frieren, an elf mage who had once embarked on perilous adventures with her comrades to vanquish evil. The story takes place decades after their victory when Frieren is forced to confront her own immortality at the funeral of one of her friends.</p>
-		</div>
-
-		<div id="Shield" class="tabcontent">
-			<img src="images/show3.png" class="int">
-			<h1>Rising of The Shield Hero</h1>
-			<p>In this show, a gamer is magically summoned into a parallel universe, where he and four more others were chosen as the four cardinal heroes destined to save the world from its prophesied doom. Stories of old tell of four otherworldly heroes - wielding the sword, spear, bow, and shield - who defended the land from the waves of calamity.</p>
-		</div>
-
-
-		<button class="tablink" onclick="openCity('inter', this, ' #78966E')" id="defaultOpen">Interests</button>
-		<button class="tablink" onclick="openCity('Cheat', this, '#8C3838')">Show #1</button>
-		<button class="tablink" onclick="openCity('Elf', this, '#537D8D')">Show #2</button>
-		<button class="tablink" onclick="openCity('Shield', this, '#A0B2A6')">Show #3</button>
-		
 		<script type="text/javascript">
 			function openCity(cityName,elmnt,color) {
 				var i, tabcontent, tablinks;

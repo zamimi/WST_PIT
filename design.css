@@ -13,19 +13,11 @@ a {
 	text-decoration: none;
 }
 
-.box a:visited{
-	color: green;
-}
-
-.box a:link{
-	color: limegreen;
-}
-
-.box a:active{
-	color: burlywood;
-}
-
 .box a:hover{
+	color: #59784E;
+}
+
+.box a:link, a:visited{
 	color: white;
 }
 
