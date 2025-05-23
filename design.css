@@ -230,14 +230,52 @@ html, body{
 	box-sizing: border-box;
 }
 
-header {
+.header {
 	position: fixed;
 	top: 0;
 	padding: 4px;
 	width: 100%;
 	background: #78966E;
 	color: #f1f1f1;
-	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.buttons button{
+	background-color: #78966E;
+	color: white;
+	border: none;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 100%;
+}
+
+.buttons button:hover {
+	background-color: #59784E;
+}
+
+.buttons a:link{
+	color: limegreen;
+}
+
+.buttons a:active{
+	color: burlywood;
+}
+
+.buttons a:visited{
+	color: white;
+}
+
+.socmedlinks {
+	margin-top: 10px;
 }
 
 footer {
@@ -387,24 +425,62 @@ html, body{
 	box-sizing: border-box;
 }
 
-header {
+.header {
 	position: fixed;
 	top: 0;
 	padding: 4px;
 	width: 100%;
 	background: #78966E;
 	color: #f1f1f1;
-	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
 }
 
-footer {
-	position: absolute;
+.buttons{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.buttons button{
+	background-color: #78966E;
+	color: white;
+	border: none;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 100%;
+}
+
+.buttons button:hover {
+	background-color: #59784E;
+}
+
+.buttons a:link{
+	color: limegreen;
+}
+
+.buttons a:active{
+	color: burlywood;
+}
+
+.buttons a:visited{
+	color: white;
+}
+
+.socmedlinks {
+	margin-top: 10px;
+}
+
+.footer {
+	position: relative;
 	width: 100%;
 	bottom: 0;
 	left: 0;
 	background-color: #59784E;
-	padding: 3px;
-	text-align: left;
+	padding: 2px;
+	text-align: center;
 	color: white;
 }
 
@@ -506,7 +582,7 @@ footer {
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
-	margin: 0 2px;
+	margin: 0;
 	background-color: #78966E;
 	border-radius: 50%;
 	display: inline-block;
